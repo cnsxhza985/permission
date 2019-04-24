@@ -56,10 +56,13 @@
             <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required >
         </div>
 
+        <div class="form-group">
+            <div class="checkbox" style="color: red;">${error}</div>
+        </div>
 
-        <div class="checkbox" style="color: red;">${error}</div>
-
-        <button class="btn btn-lg btn-primary btn-block" type="submit">登 陆</button>
+        <div class="form-group">
+            <button class="btn btn-lg btn-primary btn-block" type="submit">登 陆</button>
+        </div>
     </form>
 </div>
 
