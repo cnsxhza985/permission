@@ -42,12 +42,23 @@
 
 <div class="container">
     <form class="form-signin" action="/login.page?ret=<%=ret%>" method="post">
-        <h2 class="form-signin-heading">请登陆</h2>
-        <label for="inputEmail" class="sr-only">邮箱/电话</label>
-        <input type="text" id="inputEmail" class="form-control" placeholder="Email/Telephone" name="username" required autofocus value="${username}">
-        <label for="inputPassword" class="sr-only">密码</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required >
+        <div class="form-group txtcenter">
+            <h2 class="form-signin-heading">管理后台登陆</h2>
+        </div>
+
+        <div class="form-group">
+            <label for="inputEmail">用户名:</label>
+            <%--<label for="inputEmail" class="sr-only">邮箱/电话</label>--%>
+            <input type="text" id="inputEmail" class="form-control" placeholder="Email/Telephone" name="username" required autofocus value="${username}">
+        </div>
+        <div class="form-group">
+            <label for="inputPassword">密&nbsp;&nbsp;&nbsp;码:</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required >
+        </div>
+
+
         <div class="checkbox" style="color: red;">${error}</div>
+
         <button class="btn btn-lg btn-primary btn-block" type="submit">登 陆</button>
     </form>
 </div>
