@@ -63,4 +63,9 @@ public class SysUserController {
         map.put("roles", sysRoleService.getRoleListByUserId(userId));
         return JsonData.success(map);
     }
+
+    @RequestMapping("/page.do")
+    public ModelAndView page() {
+        return new ModelAndView("rolehome");
+    }
 }
